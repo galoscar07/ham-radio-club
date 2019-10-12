@@ -1,0 +1,24 @@
+<div class="container">
+  <div
+    *ngFor="let member of memberList"
+    class="memberCard"
+  >
+    <div class="memberCard_image" [ngStyle]="{background: 'url(\'assets/images/membrii/' + member.id + '.jpg\')',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover'}">
+    </div>
+    <div class="memberCard_info">
+      <div class="member_id">{{member.id}}</div>
+      <div class="other_info">
+        <p>Nume: {{member.name ? member.name : '-'}}</p>
+        <p>Operator: {{member.operator ? member.operator : '-'}}</p>
+        <p>Clasa de autorizare: {{member.authorizationClass ? member.authorizationClass : '-'}}</p>
+        <p>Anul autorizării: {{member.authorizationYear ? member.authorizationYear : '-'}}</p>
+        <p>E-mail: {{member.email ? member.email : '-'}}</p>
+        <p>Telefon: {{member.phone ? member.phone : '-'}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>

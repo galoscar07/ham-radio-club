@@ -1,0 +1,31 @@
+<div class="header">
+  <div class="header_inner">
+    <div class="header_inner__image">Asociatia Judeteana de Radioamatorism Alba</div>
+    <div class="header_inner__nav">
+      <div class="header_inner__nav_item"
+        [routerLink]="'/cluburi'"
+        (mouseenter)='turnArrowLeft("cluburi")' (mouseleave)='turnArrowDown("cluburi")'
+      >Cluburi <i class="arrow" [ngClass]="cluburi"></i></div>
+      <div class="header_inner__nav_item"
+        [routerLink]="'/membrii'"
+        (mouseenter)='turnArrowLeft("radioamatori")' (mouseleave)='turnArrowDown("radioamatori")'
+      >Membrii <i class="arrow" [ngClass]="radioamatori"></i></div>
+      <div class="header_inner__nav_item"
+        [routerLink]="'/concursuri'"
+        (mouseenter)='turnArrowLeft("concursuri")' (mouseleave)='turnArrowDown("concursuri")'
+      >Concursuri <i class="arrow" [ngClass]="concursuri"></i></div>
+      <div class="header_inner__nav_item"
+        [routerLink]="'/activitati'"
+        (mouseenter)='turnArrowLeft("articole")' (mouseleave)='turnArrowDown("articole")'
+      >Activitati <i class="arrow" [ngClass]="articole"></i></div>
+      <div class="header_inner__nav_item"
+        [routerLink]="'/centenar'"
+        (mouseenter)='turnArrowLeft("centenar")' (mouseleave)='turnArrowDown("centenar")'
+      >Centenar 2018<i class="arrow" [ngClass]="centenar"></i></div>
+      <div class="header_inner__nav_item"
+        [routerLink]="'/despre-noi'"
+        (mouseenter)='turnArrowLeft("despreNoi")' (mouseleave)='turnArrowDown("despreNoi")'
+      >Despre Noi <i class="arrow" [ngClass]="despreNoi"></i></div>
+    </div>
+  </div>
+</div>

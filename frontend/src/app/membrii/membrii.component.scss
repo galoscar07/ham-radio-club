@@ -1,0 +1,48 @@
+.container {
+  margin-top: 140px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .memberCard {
+    height: 200px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-radius: 7px 7px 0 7px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid rgb(29, 33, 175);
+    &:hover {
+      border: 1px solid rgb(43, 181, 185);
+    }
+
+    .memberCard_image {
+      width: 200px;
+      border-radius: 7px 0 0 7px;
+      border-right: 2px solid #ccc;
+    }
+    .memberCard_info {
+      margin-left: 10px;
+      .member_id {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .other_info {
+        margin-left: 20px;
+        p {
+          margin:4px;
+        }
+      }
+    }
+  }
+}
